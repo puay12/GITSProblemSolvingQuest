@@ -101,10 +101,10 @@ private fun getGivenString() : String {
         print("\nMasukkan sebuah kata TANPA spasi : ")
         answer = readlnOrNull()
 
-        if (answer == null) {
+        if (answer == null || answer == "") {
             println("Kata/kalimat harus diisi!")
         }
-    } while (answer == null)
+    } while (answer == null || answer == "")
 
     return answer
 }
@@ -122,10 +122,10 @@ private fun getArrayQueries() : ArrayList<Int> {
         print("\nMasukkan angka queries : ")
         answer = readlnOrNull()
 
-        if (answer == null) {
+        if (answer == null  || answer == "") {
             println("Queries harus diisi!")
         }
-    } while (answer == null)
+    } while (answer == null || answer == "")
 
     queries = answer.split(",").map { item -> item.toInt() } as ArrayList<Int>
 
