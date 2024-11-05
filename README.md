@@ -4,8 +4,9 @@
 - Setiap soal memiliki 1 package yang terdiri dari file program (source code) dan 3 screenshots output dari program.  
 
 ## Basis ide penyelesaian **Soal Kedua** :  
-Output akan bernilai "NO" jika opening bracket yang paling dalam tidak **langsung** menemukan pasangannya di karakter selanjutnya. Sehingga kapan pun closing bracket ditemukan **setelah karakter opening bracket**, maka harus sepasang dengan karakter sebelumnya.  
+- Output akan bernilai "NO" jika opening bracket yang paling dalam tidak **langsung** menemukan pasangannya di karakter selanjutnya. Sehingga kapan pun closing bracket ditemukan **setelah karakter opening bracket**, maka harus sepasang dengan karakter sebelumnya.  
 Misalnya setelah karakter ( ditemukan karakter ], maka output akan langsung bernilai "NO" dan loop dihentikan karena seharusnya karakter sebelum ] adalah [.
+- Output juga akan bernilai "NO" jika jumlah opening bracket TIDAK SAMA dengan jumlah closing bracket pada *givenString*
   
 ## Penjelasan detail dari **Soal Kedua**:  
 - Algoritma penyelesaian soal berada pada function bernama **identifyBrackets()** dengan parameter *givenString* bertipe String sebagai string yang akan diidentifikasi.

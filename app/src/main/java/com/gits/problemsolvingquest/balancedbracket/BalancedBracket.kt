@@ -25,8 +25,6 @@ private fun identifyBrackets(givenString: String) : String {
     var countClosing = 0
 
     givenString.forEach { item ->
-        println("prevBracket $prevBracket")
-        println("item $item")
         if (item in openingBrackets) {
             countOpening += 1
         } else if (item in closingBrackets) {
@@ -57,7 +55,7 @@ private fun getGivenString() : String {
     var answer: String?
 
     do {
-        println("Brackets dapat terdiri dari : ( , ), [, ], {, atau }")
+        println("\nBrackets dapat terdiri dari : ( , ), [, ], {, atau }")
         println("Contoh input seperti {[()]}")
         print("\nMasukkan brackets (bisa dengan/tanpa spasi): ")
         answer = readlnOrNull()
